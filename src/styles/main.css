@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  padding: 30px;
+  justify-content: space-between;
+}
+
+.nav-links h1 {
+  font-size: 45px;
+  color: rgb(0, 0, 59);
+}
+
+.nav-links li {
+  margin-left: 50px;
+  font-size: 20px;
+}
+
+.nav-links div {
+  display: flex;
+  padding-right: 1rem;
+}
+
+.active-link {
+  color: rgb(0, 0, 104);
+}
+
+a {
+  text-decoration: none;
+}
+
+.book-div {
+  border: 1px solid rgb(112, 112, 112);
+  margin-top: 20px;
+  margin-bottom: 1.2rem;
+  padding: 15px 20px;
+}
+
+.book,
+.book-buttons {
+  padding-top: 20px;
+}
+
+.container-div {
+  padding: 50px;
+}
+
+.form-input {
+  width: 100%;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button {
+  background-color: #000068;
+  color: #fff;
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+.button:hover {
+  background-color: rgb(5, 5, 109);
+  color: #d4d4d4;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.form-container .input-field {
+  padding: 5px;
+  width: 50%;
+  margin-top: 0.5rem;
+}
