@@ -2,7 +2,7 @@ const CHECK_STATUS = 'bookStore/category/CHECK_STATUS';
 
 const initialState = [];
 
-export const addBookAction = (payload) => ({
+export const checkStatusAction = (payload) => ({
   type: CHECK_STATUS,
   payload,
 });
