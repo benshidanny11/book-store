@@ -37,20 +37,26 @@ const Form = () => {
           />
         </div>
         <div className="form-input">
-          <input
-            type="text"
+          <select
             className="input-field"
-            placeholder="Book Author"
             value={category}
             onChange={(e) => {
               setCategory(e.target.value);
             }}
-          />
+          >
+            <option>Category</option>
+            <option>Science</option>
+            <option>Technology</option>
+            <option>Politics</option>
+            <option>History</option>
+            <option>Economics</option>
+            <option>Health</option>
+          </select>
         </div>
         <div className="form-input">
           <input
             type="button"
-            className="button"
+            className="button-add"
             value="Add book"
             onClick={async () => {
               dispatch(await addBookAction({
@@ -59,7 +65,7 @@ const Form = () => {
               setTitle('');
               setAuthor('');
               setCategory('');
-              setTimeout(() => location.reload(), 500);
+              setTimeout(() => location.reload(), 1000);
             }}
           />
         </div>

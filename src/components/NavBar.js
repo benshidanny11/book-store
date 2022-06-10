@@ -10,7 +10,7 @@ const NavBar = () => {
     <nav className="nav">
       <ul className="nav-links">
         <h1>
-          <NavLink to="/">BookStore CMS</NavLink>
+          <NavLink to="/" className="nav-links-item">BookStore CMS</NavLink>
         </h1>
         <div>
           {links.map((link) => (
