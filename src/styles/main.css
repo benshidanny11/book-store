@@ -1,5 +1,7 @@
-/* stylelint-disable csstree/validator */
 /* stylelint-disable font-family-no-missing-generic-family-keyword */
+/* stylelint-disable csstree/validator */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&family=Roboto+Slab&display=swap');
+
 * {
   padding: 0;
   margin: 0;
@@ -13,8 +15,9 @@
 }
 
 .nav-links-item {
-  font-size: 45px;
   color: #0290ff !important;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.875rem;
 }
 
 .info {
@@ -23,19 +26,19 @@
 
 .cate {
   opacity: 0.5;
-  font-family: sans-serif Montserrat;
-  font-size: 1.6rem;
+  font-family: 'Montserrat' sans-serif;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
   color: #121212;
+  font-size: 0.875rem;
 }
 
 .title {
-  font-family: RobotoSlab;
-  font-size: 2.5rem;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.375rem;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -44,14 +47,13 @@
 }
 
 .auth {
-  font-family: sans-serif RobotoSlab;
-  font-size: 1.6rem;
-  font-weight: 300;
+  font-family: 'Roboto Slab' sans-serif;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
   color: #4386bf;
+  font-size: 0.875rem;
 }
 
 .nav-links li {
@@ -65,7 +67,17 @@
 }
 
 .active-link {
-  color: #242323;
+  color: #121212;
+  width: 3.688rem;
+  height: 1rem;
+  margin: 1.125rem 2.563rem 0.688rem 0;
+  font-family: 'Montserrat' sans-serif;
+  font-size: 0.813rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
 }
 
 a {
@@ -73,15 +85,122 @@ a {
 }
 
 .book-div {
-  border: 1px solid rgb(214, 214, 214);
   margin-top: 20px;
   margin-bottom: 1.2rem;
   padding: 15px 20px;
 }
 
+.book-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgb(214, 214, 214);
+  margin: 1rem;
+}
+
+.book-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  padding: 1rem;
+  margin-right: 2rem;
+}
+
+.bookactions {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-height: 250px;
+}
+
+.book-progress {
+  display: flex;
+  flex-direction: column;
+}
+
+.Oval-2 {
+  width: 60px;
+  height: 60px;
+  border-top: 5px solid  #379cf6;
+  border-right: 5px solid  #379cf6;
+  border-bottom: 5px solid#bbbbbb;
+  border-left: 5px solid#bbbbbb;
+  border-radius: 50%;
+  transform: rotate(45deg);
+}
+
+.-Percent-Complete {
+  font-family: 'Montserrat' sans-serif;
+  font-size: 2rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.Completed {
+  opacity: 0.5;
+  font-family: 'Montserrat' sans-serif;
+  font-size: 1.2rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.Current-Chapter {
+  opacity: 0.5;
+  font-family: 'Roboto Slab' sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.Update-progress {
+  font-family: 'Roboto Slab' sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #fff;
+  border-radius: 3px;
+  padding: 0.7rem 2rem;
+  background-color: #0290ff;
+}
+
+.Current-Lesson {
+  font-family: 'Roboto Slab' sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  color: #121212;
+}
+
 .book-buttons {
   display: flex;
   align-items: center;
+}
+
+.Line-2-1 {
+  width: 0.125rem;
+  height: 4.375rem;
+  margin: 1.125rem 3.688rem 0 4.938rem;
+  background-color: #e8e8e8;
 }
 
 .book,
@@ -104,12 +223,16 @@ a {
 }
 
 .button {
-  font-family: RobotoSlab;
-  font-size: 1rem;
-  font-weight: bold;
   color: #4386bf;
   border: none;
   background-color: #fff;
+  font-family: 'Roboto Slab', serif;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  font-size: 0.875rem;
+  font-weight: 300;
 }
 
 .button:hover {
@@ -135,8 +258,21 @@ a {
   width: 1.5px;
   height: 1.5rem;
   margin: 0.75rem 1.063rem 0 0.938rem;
-  border: solid 1px #e8e8e8;
   background-color: #e8e8e8;
+}
+
+.form-title {
+  width: 10.875rem;
+  height: 1.5rem;
+  margin: 1.813rem 32.75rem 1.188rem 0;
+  font-family: Montserrat;
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.18px;
+  color: hsl(0, 0%, 53%);
 }
 
 .button-add {

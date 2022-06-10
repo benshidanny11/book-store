@@ -12,7 +12,7 @@ const Form = () => {
 
   return (
     <div>
-      <h2> Add book </h2>
+      <h2 className="form-title"> Add book </h2>
       <form className="form-container">
         <div className="form-input">
           <input
@@ -59,7 +59,7 @@ const Form = () => {
             className="button-add"
             value="Add book"
             onClick={async () => {
-              dispatch(await addBookAction({
+              dispatch(addBookAction({
                 item_id: uuidv4(), title, author, category,
               }));
               setTitle('');
