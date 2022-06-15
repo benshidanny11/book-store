@@ -21,7 +21,7 @@ const Books = () => {
 
   return (
     <div className="container-div">
-      {booksList.length > 0 ? booksList.map((book) => (<Book key={book.id} book={book} />)) : ''}
+      {booksList.length > 0 ? booksList.map((book) => (<Book key={book[0]} book={book} />)) : ''}
       <Form />
     </div>
   );
